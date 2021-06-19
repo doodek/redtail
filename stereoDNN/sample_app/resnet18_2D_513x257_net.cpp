@@ -18,7 +18,7 @@ using namespace nvinfer1;
 
 using weight_map = std::unordered_map<std::string, Weights>;
 
-INetworkDefinition* createResNet18_2D_513x257Network(IBuilder& builder, IPluginContainer& plugin_factory,
+INetworkDefinition* createResNet18_2DNetwork(IBuilder& builder, IPluginContainer& plugin_factory,
                                      DimsCHW img_dims, const weight_map& weights, DataType data_type,
                                      ILogger& log)
 {
